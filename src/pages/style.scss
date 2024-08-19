@@ -1,0 +1,39 @@
+.wrapReg {
+    min-width: 430px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    &.Personale {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.wrapInner {
+    min-width: 430px;
+}
+
+.ant-input {
+    border-radius: 8px;
+    border: 2px solid #009373;
+
+    &:hover {
+        border: 2px solid #00644e;
+    }
+}
+
+.specialGradient {
+    background: rgb(0, 147, 115);
+    background: linear-gradient(90deg, rgba(0,147,115,0.6937368697478992) 0%, rgba(167,218,207,0.8001794467787114) 13%, rgba(226,243,239,1) 20%, rgba(255,255,255,1) 29%, rgba(255,255,255,1) 72%, rgba(197,231,223,0.7889749649859944) 85%, rgba(139,206,191,0.8309917717086834) 92%, rgba(0,147,115,0.774969362745098) 100%);
+}
+
+.ant-tabs-tab-btn,
+.ant-tabs-tab-active,
+.ant-tabs-ink-bar {
+    color: rgb(0, 147, 115) !important;
+}
+
+.ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+    background: rgb(0, 147, 115) !important;
+}

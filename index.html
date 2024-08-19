@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="icon" type="image/svg+xml" href="/src/images/favicon.ico" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=1100, initial-scale=1.0" />
+    <title>ВКурсе - Личный Кабинет | Онлайн-сервис для проведения обучения и совещаний</title>
+    <meta name="description" content="Российская платформа для проведения мероприятий от 50 до 10000 участников" /> 
+    <meta property="og:url" content="https://lk.vkurse.ru" />
+    <meta property="og:title" content="ВКурсе - Личный Кабинет | Онлайн-сервис для проведения обучения и совещаний" />
+    <meta property="og:description" content="Российская платформа для проведения мероприятий от 50 до 10000 участников" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/img/logo.png" />
+    <link rel="canonical" href="https://lk.vkurse.ru">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/img/152x152.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/152x152.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/152x152.png">
+    <link rel="apple-touch-startup-image" href="/img/152x152.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/img/152x152.png">
+    <script>
+      if (localStorage.theme === 'dark' || !('theme' in localStorage)) {
+        document.querySelector('html').classList.add('dark');
+        document.querySelector('html').style.colorScheme = 'dark';
+      } else {
+        document.querySelector('html').classList.remove('dark');
+        document.querySelector('html').style.colorScheme = 'light';
+      }        
+    </script>      
+    <style>
+      .bg-green-500, .text-green-500 {
+        color: #009373 !important;
+      }
+    </style>
+  </head>
+  <body class="font-inter antialiased bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+        if (localStorage.getItem('sidebar-expanded') == 'true') {
+            document.querySelector('body').classList.add('sidebar-expanded');
+        } else {
+            document.querySelector('body').classList.remove('sidebar-expanded');
+        }
+    </script>   
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
